@@ -103,5 +103,3 @@ This is a backend MVP for a dating app using Node.js, Express, MongoDB, and mock
 4. Run `npm start`
 
 ---
-
-Let me know if you’d like to add a demo video link or contributors section!
