@@ -26,7 +26,7 @@ const likeUser = async (req, res) => {
       await targetUser.save();
 
       console.log(
-        `🔔 Mock Firebase Notification: ${currentUser.name} and ${targetUser.name} matched!`
+        `Mock Firebase Notification: ${currentUser.name} and ${targetUser.name} matched!`
       );
 
       return res.status(200).json({ message: "It’s a match!" });
