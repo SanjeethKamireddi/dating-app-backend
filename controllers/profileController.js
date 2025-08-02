@@ -21,7 +21,9 @@ const createOrUpdateProfile = async (req, res) => {
       phone,
       gender,
       dob,
-      travelInterests: travelInterests ? travelInterests.split(",") : [],
+      travelInterests: Array.isArray(travelInterests)
+        ? travelInterests
+        : travelInterests?.split(",") || [],
       preferredGender,
       preferredMinAge,
       preferredMaxAge,
